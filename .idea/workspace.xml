@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="3b1998d9-e30c-43be-b9a8-4e9f19fcb8ff" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs.py" beforeDir="false" afterPath="$PROJECT_DIR$/configs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotus_crawler/spiders/get_images.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lotus_crawler/spiders/spiders.py" beforeDir="false" afterPath="$PROJECT_DIR$/lotus_crawler/spiders/spiders.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/test.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +26,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BigDataCourse/IMDB_Crawler" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -76,22 +80,26 @@
       <screen x="62" y="0" width="1218" height="720" />
     </state>
     <state x="421" y="164" key="#com.intellij.fileTypes.FileTypeChooser/62.0.1218.720@62.0.1218.720" timestamp="1608278959703" />
-    <state width="1197" height="259" key="GridCell.Tab.0.bottom" timestamp="1608276310877">
+    <state x="452" y="116" key="FileChooserDialogImpl" timestamp="1608281715035">
       <screen x="62" y="0" width="1218" height="720" />
     </state>
-    <state width="1197" height="259" key="GridCell.Tab.0.bottom/62.0.1218.720@62.0.1218.720" timestamp="1608276310877" />
-    <state width="1197" height="259" key="GridCell.Tab.0.center" timestamp="1608276310877">
+    <state x="452" y="116" key="FileChooserDialogImpl/62.0.1218.720@62.0.1218.720" timestamp="1608281715035" />
+    <state width="1197" height="259" key="GridCell.Tab.0.bottom" timestamp="1608281716644">
       <screen x="62" y="0" width="1218" height="720" />
     </state>
-    <state width="1197" height="259" key="GridCell.Tab.0.center/62.0.1218.720@62.0.1218.720" timestamp="1608276310877" />
-    <state width="1197" height="259" key="GridCell.Tab.0.left" timestamp="1608276310876">
+    <state width="1197" height="259" key="GridCell.Tab.0.bottom/62.0.1218.720@62.0.1218.720" timestamp="1608281716644" />
+    <state width="1197" height="259" key="GridCell.Tab.0.center" timestamp="1608281716643">
       <screen x="62" y="0" width="1218" height="720" />
     </state>
-    <state width="1197" height="259" key="GridCell.Tab.0.left/62.0.1218.720@62.0.1218.720" timestamp="1608276310876" />
-    <state width="1197" height="259" key="GridCell.Tab.0.right" timestamp="1608276310877">
+    <state width="1197" height="259" key="GridCell.Tab.0.center/62.0.1218.720@62.0.1218.720" timestamp="1608281716643" />
+    <state width="1197" height="259" key="GridCell.Tab.0.left" timestamp="1608281716643">
       <screen x="62" y="0" width="1218" height="720" />
     </state>
-    <state width="1197" height="259" key="GridCell.Tab.0.right/62.0.1218.720@62.0.1218.720" timestamp="1608276310877" />
+    <state width="1197" height="259" key="GridCell.Tab.0.left/62.0.1218.720@62.0.1218.720" timestamp="1608281716643" />
+    <state width="1197" height="259" key="GridCell.Tab.0.right" timestamp="1608281716644">
+      <screen x="62" y="0" width="1218" height="720" />
+    </state>
+    <state width="1197" height="259" key="GridCell.Tab.0.right/62.0.1218.720@62.0.1218.720" timestamp="1608281716644" />
     <state x="173" y="4" key="SettingsEditor" timestamp="1608257608669">
       <screen x="62" y="0" width="1218" height="720" />
     </state>

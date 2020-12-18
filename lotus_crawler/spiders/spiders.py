@@ -5,8 +5,8 @@ from ..items import PostItem
 from configs import *
 
 
-class PostImageSpider(Spider):
-    name = 'PostImageSpider'
+class PostThumbSpider(Spider):
+    name = 'PostThumbSpider'
 
     def start_requests(self):
         post_links_path = os.path.join(CORE_DATA_DIR, 'post_links.csv')
@@ -28,7 +28,10 @@ class PostImageSpider(Spider):
         t = response.xpath('/html/head/meta[@property="og:image:url"]/@content').extract()
         if len(t) > 0:
             post['thumbnail_url'] = t[0]
-            self.get_and_save_image(t[0], os.path.join(IMAGES_DIR, post['post_id']))
+            # try:
+            #     self.get_and_save_image(t[0], os.path.join(IMAGES_DIR, post['post_id']))
+            # except:
+            #     pass
         else:
             post['thumbnail_url'] = None
         yield post
