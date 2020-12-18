@@ -1,11 +1,12 @@
 from scrapy import Spider, Request
 from pandas import read_csv
 import requests
-from ..items import PostItem
+from lotus_crawler.items import PostItem
 from configs import *
 
 
 class PostThumbSpider(Spider):
+    handle_httpstatus_list = [404]
     name = 'PostThumbSpider'
 
     def start_requests(self):
@@ -36,11 +37,11 @@ class PostThumbSpider(Spider):
             post['thumbnail_url'] = None
         yield post
 
-    def get_and_save_image(self, url, save_to):
-        res = requests.get(url)
-        if res.ok:
-            with open(save_to, 'wb') as f:
-                f.write(res.content)
+    # def get_and_save_image(self, url, save_to):
+    #     res = requests.get(url)
+    #     if res.ok:
+    #         with open(save_to, 'wb') as f:
+    #             f.write(res.content)
 
 
 
