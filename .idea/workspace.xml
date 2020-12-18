@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b1998d9-e30c-43be-b9a8-4e9f19fcb8ff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs.py" beforeDir="false" afterPath="$PROJECT_DIR$/configs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lotus_crawler/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/lotus_crawler/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lotus_crawler/spiders/spiders.py" beforeDir="false" afterPath="$PROJECT_DIR$/lotus_crawler/spiders/spiders.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
