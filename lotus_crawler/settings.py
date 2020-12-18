@@ -11,6 +11,8 @@ BOT_NAME = 'lotus_crawler'
 
 SPIDER_MODULES = ['lotus_crawler.spiders']
 NEWSPIDER_MODULE = 'lotus_crawler.spiders'
+LOG_LEVEL = 'INFO'
+
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
