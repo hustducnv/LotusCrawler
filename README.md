@@ -1,7 +1,10 @@
+_pip install scrapy tqdm requests_
+
 ###### **RUN PostThumbSpider for get thumb url**:
 - in _config.py_ edit START_IDX and END_IDX
-- open terminal _project base dir_: _scrapy crawl PostThumbSpider -o post_thumb_links\_{START_IDX}\_to\_{END_IDX}.csv_
-- eg. _scrapy crawl PostThumbSpider -o post_thumb_links\_0\_to\_5.csv_
+- open terminal _project base dir_: _scrapy crawl PostThumbSpider -o ./data/post_thumb_links\_{START_IDX}\_to\_{END_IDX}.csv_
+- eg. _scrapy crawl PostThumbSpider -o ./data/post_thumb_link\_0\_5.csv_
+
 
 
 - Duc: 0-50k, 50k-100k

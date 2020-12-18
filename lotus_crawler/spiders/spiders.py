@@ -10,18 +10,21 @@ class PostThumbSpider(Spider):
     name = 'PostThumbSpider'
 
     def start_requests(self):
-        post_links_path = os.path.join(CORE_DATA_DIR, 'post_links.csv')
+        post_link_path = GetUrlConfig.POST_LINK_PATH
         df = read_csv(
-            post_links_path,
-            dtype={'link_share': str, 'post_id': str}
+            post_link_path,
+            dtype={'post_id': str, 'link_share': str}
         )
-        start_idx = START_IDX
-        # end_idx = len(df)-1
-        end_idx = END_IDX
-        for i in range(start_idx, end_idx+1):
-            url, post_id = df.iloc[i]
-            # url = 'https://lotus.vn/w/post/784681852643016704.htm'
-            yield Request(url=url, callback=self.parse, cb_kwargs=dict(post_id=post_id))
+        start_idx = GetUrlConfig.START_IDX
+        end_idx = GetUrlConfig.END_IDX
+        for i in range(start_idx, end_idx):
+            try:
+                post_id, url = df.iloc[i]
+                # url = 'https://lotus.vn/w/post/784681852643016704.htm'
+                yield Request(url=url, callback=self.parse, cb_kwargs=dict(post_id=post_id))
+            except:
+                pass
+                print('Request ERROR --------------------------------------------------------------------')
 
     def parse(self, response, **kwargs):
         post = PostItem()
