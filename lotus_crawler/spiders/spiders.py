@@ -23,7 +23,6 @@ class PostThumbSpider(Spider):
                 # url = 'https://lotus.vn/w/post/784681852643016704.htm'
                 yield Request(url=url, callback=self.parse, cb_kwargs=dict(post_id=post_id))
             except:
-                pass
                 print('Request ERROR --------------------------------------------------------------------')
 
     def parse(self, response, **kwargs):

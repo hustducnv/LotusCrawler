@@ -19,9 +19,8 @@ def download_image(url, save_to):
         print('----------FAIL-------------------: fail to get image at {}'.format(url))
 
 
-def download_image_multithreading(df):
-    save_dir = GetImageConfig.SAVE_DIR
-    n_threads = len(df) - 1
+def download_image_multithreading(df, save_dir):
+    n_threads = len(df)
     threads = []
     for i in range(n_threads):
         post_id, thumbnail_url = df.iloc[i]
@@ -42,9 +41,10 @@ def crawl_thumb():
         post_thumb_link_path,
         dtype={'post_id': str, 'thumbnail_url': str}
     )
+    save_dir = GetImageConfig.SAVE_DIR
     start_idx = GetImageConfig.START_IDX
     end_idx = GetImageConfig.END_IDX
-    df = df[start_idx:end_idx]
+    df = df[start_idx:end_idx].reset_index(drop=True)
 
     n_threads = GetImageConfig.N_THREADS
     n_posts = len(df)
@@ -55,10 +55,10 @@ def crawl_thumb():
     else:
         for i in tqdm(range(int(np.ceil(n_posts/n_threads)))):
             start = i*n_threads
-            end_idx = (i+1)*n_threads
-            if end_idx > n_posts:
-                end_idx = n_posts
-            download_image_multithreading(df[start_idx:end_idx])
+            end = start + n_threads
+            if end > n_posts:
+                end = n_posts
+            download_image_multithreading(df[start:end].reset_index(drop=True), save_dir)
 
 
 
